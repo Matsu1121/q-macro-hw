@@ -4,8 +4,8 @@ clear all
 close all
 
 % load the data
-startdate = '01/01/1954';
-enddate = '01/01/2020';
+startdate = '01/01/1994';
+enddate = '01/01/2022';
 
 f = fred;
 Y_us = fetch(f,'GDPC1',startdate,enddate);
