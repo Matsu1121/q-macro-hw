@@ -4,14 +4,12 @@ clear all
 close all
 
 % load the data
-startdate = '01/01/1994';
-enddate = '01/01/2022';
+startdate = '01/01/1954';
+enddate = '01/01/2020';
 
 f = fred;
 Y_us = fetch(f,'GDPC1',startdate,enddate);
-%Y_au = fetch(f,'NGDPRSAXDCAUQ',startdate,enddate);
 Y_jp = fetch(f,'JPNRGDPEXP',startdate,enddate);
-%Y_jp = fetch(f,'JPNNGDP',startdate,enddate);
 y_us = log(Y_us.Data(:,2));
 y_jp = log(Y_jp.Data(:,2));
 
